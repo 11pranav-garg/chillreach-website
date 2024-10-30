@@ -1,0 +1,30 @@
+.custom-cursor {
+  cursor: none;
+}
+
+.cursor {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #f97316;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transition: all 0.1s ease;
+  transition-property: width, height, border;
+}
+
+.cursor-dot {
+  width: 4px;
+  height: 4px;
+  background: #f97316;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+a:hover ~ .cursor {
+  transform: scale(1.5);
+  background: rgba(249, 115, 22, 0.1);
+}
