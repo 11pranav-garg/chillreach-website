@@ -16,7 +16,7 @@ const monitoringTiers = {
   },
   advanced: {
     title: "Advanced Monitoring",
-    price: 10,
+    price: 3.5,
     features: [
       "Weekly blacklist checks",
       "Advanced DNS reporting",
@@ -26,7 +26,7 @@ const monitoringTiers = {
   },
   premium: {
     title: "Premium Monitoring",
-    price: 15,
+    price: 3,
     features: [
       "Daily blacklist checks",
       "Comprehensive reporting",
