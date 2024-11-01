@@ -23,26 +23,6 @@
     @apply bg-black/40 backdrop-blur-lg p-8 rounded-xl border border-orange-500/10 
            hover:border-orange-500/30 transition-all duration-300;
   }
-
-  .orange-glow {
-    @apply relative;
-  }
-
-  .orange-glow::before {
-    content: '';
-    @apply absolute inset-0 -z-10 bg-orange-500/20 blur-xl rounded-full opacity-0 
-           transition-opacity duration-300;
-  }
-
-  .orange-glow:hover::before {
-    @apply opacity-100;
-  }
-
-  .contact-btn {
-    @apply px-8 py-3 bg-gradient-to-r from-orange-500 to-orange-600 rounded-lg 
-           hover:from-orange-600 hover:to-orange-700 transition-all duration-300 
-           shadow-lg hover:shadow-orange-500/20;
-  }
 }
 
 @keyframes float {
@@ -53,29 +33,4 @@
 
 .animate-float {
   animation: float 6s ease-in-out infinite;
-}
-
-@keyframes ping {
-  75%, 100% {
-    transform: scale(2);
-    opacity: 0;
-  }
-}
-
-.animate-ping {
-  animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
-}
-
-@keyframes dash {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-.animate-dash {
-  animation: dash 20s linear infinite;
-}
-
-.drop-shadow-lg {
-  filter: drop-shadow(0 4px 6px rgba(249, 115, 22, 0.3));
 }

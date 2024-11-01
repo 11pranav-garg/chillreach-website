@@ -33,6 +33,14 @@ const Navbar = () => {
               Products
             </NavLink>
             <NavLink 
+              to="/services" 
+              className={({ isActive }) => 
+                `transition-colors duration-200 hover:text-orange-500 ${isActive ? 'text-orange-500' : 'text-gray-300'}`
+              }
+            >
+              Services
+            </NavLink>
+            <NavLink 
               to="/team" 
               className={({ isActive }) => 
                 `transition-colors duration-200 hover:text-orange-500 ${isActive ? 'text-orange-500' : 'text-gray-300'}`
@@ -80,6 +88,15 @@ const Navbar = () => {
                 onClick={() => setIsOpen(false)}
               >
                 Products
+              </NavLink>
+              <NavLink 
+                to="/services" 
+                className={({ isActive }) => 
+                  `transition-colors duration-200 hover:text-orange-500 ${isActive ? 'text-orange-500' : 'text-gray-300'}`
+                }
+                onClick={() => setIsOpen(false)}
+              >
+                Services
               </NavLink>
               <NavLink 
                 to="/team" 

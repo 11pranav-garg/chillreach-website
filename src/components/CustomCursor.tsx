@@ -16,7 +16,7 @@ const CustomCursor: React.FC<CustomCursorProps> = ({ position }) => {
         }}
         transition={{
           type: "tween",
-          duration: 0.1
+          duration: 0.05  // Reduced from 0.1
         }}
       />
       <motion.div
@@ -27,7 +27,7 @@ const CustomCursor: React.FC<CustomCursorProps> = ({ position }) => {
         }}
         transition={{
           type: "tween",
-          duration: 0.15
+          duration: 0.08  // Reduced from 0.15
         }}
       />
     </>

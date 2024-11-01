@@ -31,22 +31,22 @@ const TeamMember = ({ name, role, image, linkedin }) => (
 const Team = () => {
   const team = [
     {
-      name: "John Smith",
+      name: "Sai Vamsi",
       role: "Founder & CEO",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
-      linkedin: "https://linkedin.com/in/example"
+      image: "https://media.licdn.com/dms/image/v2/D5603AQEL0bedcwUldA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1726682447157?e=1735776000&v=beta&t=7izmqDfErv0TY_zwFdTgS_cRD2V0N1GJIoEF8W6ZeHA",
+      linkedin: "https://www.linkedin.com/in/sai-vamsi-coldemail/"
     },
     {
-      name: "Sarah Johnson",
-      role: "Technical Lead",
+      name: "Pranav Garg",
+      role: "Co-Founder and Deliveribility Expert",
+      image: "https://media.licdn.com/dms/image/v2/D5603AQFrqp5OMmqcCw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1684153939668?e=1735776000&v=beta&t=51HY9_dqjBKr6qreEk3Y-LmQOZTBZcmPrLtWzghVhLo",
+      linkedin: "https://www.linkedin.com/in/11pranav-garg/"
+    },
+    {
+      name: "Uzma Anjum",
+      role: "Inbox Manager",
       image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
-      linkedin: "https://linkedin.com/in/example"
-    },
-    {
-      name: "Michael Chen",
-      role: "Deliverability Expert",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
-      linkedin: "https://linkedin.com/in/example"
+      linkedin: "https://linkedin.com/in/team-member-3"
     }
   ];
 

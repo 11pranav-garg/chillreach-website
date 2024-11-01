@@ -27,20 +27,20 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <a 
-                  href="mailto:info@chillreach.com" 
+                  href="mailto:info@chillreach.ai" 
                   className="flex items-center text-gray-400 hover:text-orange-500 transition-colors duration-300"
                 >
                   <Mail className="w-4 h-4 mr-2" />
-                  info@chillreach.com
+                  info@chillreach.ai
                 </a>
               </li>
               <li>
                 <a 
-                  href="tel:+15551234567" 
+                  href="tel:+919392274091" 
                   className="flex items-center text-gray-400 hover:text-orange-500 transition-colors duration-300"
                 >
                   <Phone className="w-4 h-4 mr-2" />
-                  +1 (555) 123-4567
+                  +91 93922 74091
                 </a>
               </li>
               <li>
@@ -51,18 +51,18 @@ const Footer = () => {
                   className="flex items-center text-gray-400 hover:text-orange-500 transition-colors duration-300"
                 >
                   <MapPin className="w-4 h-4 mr-2" />
-                  San Francisco, CA
+                  Vishakhapatnam, India
                 </a>
               </li>
               <li>
                 <a 
-                  href="https://linkedin.com/company/chillreach" 
+                  href="https://www.linkedin.com/in/sai-vamsi-coldemail/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex items-center text-gray-400 hover:text-orange-500 transition-colors duration-300"
                 >
                   <Linkedin className="w-4 h-4 mr-2" />
-                  LinkedIn
+                  Connect
                 </a>
               </li>
             </ul>

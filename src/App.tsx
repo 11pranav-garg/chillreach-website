@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Products from './pages/Products';
+import Services from './pages/Services';
 import Team from './pages/Team';
 import CustomCursor from './components/CustomCursor';
 import './styles/cursor.css';
@@ -19,9 +20,9 @@ function App() {
 
 function AppContent() {
   const location = useLocation();
-  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+  const [cursorPosition, setCursorPosition] = React.useState({ x: 0, y: 0 });
 
-  useEffect(() => {
+  React.useEffect(() => {
     const updateCursorPosition = (e: MouseEvent) => {
       setCursorPosition({ x: e.clientX, y: e.clientY });
     };
@@ -38,6 +39,7 @@ function AppContent() {
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />
+          <Route path="/services" element={<Services />} />
           <Route path="/team" element={<Team />} />
         </Routes>
       </AnimatePresence>

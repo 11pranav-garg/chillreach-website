@@ -57,7 +57,7 @@ const DeliverabilitySection = () => {
             <TrendingUp className="w-12 h-12 text-orange-500 mb-4" />
             <h3 className="text-xl font-bold mb-4">Measurable Results</h3>
             <ul className="space-y-3 text-gray-300">
-              <li>• 99.9% delivery rates</li>
+              <li>• Higher Reply rates</li>
               <li>• Higher open rates</li>
               <li>• Improved click-through</li>
               <li>• Better conversion rates</li>
