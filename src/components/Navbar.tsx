@@ -41,6 +41,14 @@ const Navbar = () => {
               Services
             </NavLink>
             <NavLink 
+              to="/dns-checker" 
+              className={({ isActive }) => 
+                `transition-colors duration-200 hover:text-orange-500 ${isActive ? 'text-orange-500' : 'text-gray-300'}`
+              }
+            >
+              DNS Checker
+            </NavLink>
+            <NavLink 
               to="/team" 
               className={({ isActive }) => 
                 `transition-colors duration-200 hover:text-orange-500 ${isActive ? 'text-orange-500' : 'text-gray-300'}`
@@ -97,6 +105,15 @@ const Navbar = () => {
                 onClick={() => setIsOpen(false)}
               >
                 Services
+              </NavLink>
+              <NavLink 
+                to="/dns-checker" 
+                className={({ isActive }) => 
+                  `transition-colors duration-200 hover:text-orange-500 ${isActive ? 'text-orange-500' : 'text-gray-300'}`
+                }
+                onClick={() => setIsOpen(false)}
+              >
+                DNS Checker
               </NavLink>
               <NavLink 
                 to="/team" 

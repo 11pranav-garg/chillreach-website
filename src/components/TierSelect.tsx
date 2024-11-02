@@ -11,9 +11,9 @@ const TierSelect: React.FC<TierSelectProps> = ({ value, onChange }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const tiers = {
-    basic: "Basic Tier",
-    advanced: "Advanced Tier",
-    premium: "Premium Tier"
+    basic: 'Basic Tier',
+    advanced: 'Advanced Tier',
+    premium: 'Premium Tier',
   };
 
   return (
@@ -34,7 +34,7 @@ const TierSelect: React.FC<TierSelectProps> = ({ value, onChange }) => {
           transition={{ duration: 0.2 }}
           className="flex items-center justify-center ml-2"
         >
-          <ChevronDown className="w-5 h-5 text-orange-500" />
+          <ChevronDown className="w-5 h-5 text-orange-800" />
         </motion.div>
       </button>
 
@@ -56,7 +56,11 @@ const TierSelect: React.FC<TierSelectProps> = ({ value, onChange }) => {
                   setIsOpen(false);
                 }}
                 className={`px-4 py-2 cursor-pointer transition-all duration-200 text-lg font-light
-                  ${value === key ? 'bg-orange-500/20 text-orange-500' : 'text-white hover:bg-orange-500/10'}`}
+                  ${
+                    value === key
+                      ? 'bg-orange-500/20 text-orange-500'
+                      : 'text-white hover:bg-orange-500/10'
+                  }`}
               >
                 {label}
               </div>

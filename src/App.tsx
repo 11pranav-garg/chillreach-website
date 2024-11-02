@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import Products from './pages/Products';
 import Services from './pages/Services';
 import Team from './pages/Team';
+import DNSChecker from './pages/DNSChecker';
 import CustomCursor from './components/CustomCursor';
 import './styles/cursor.css';
 
@@ -41,6 +42,7 @@ function AppContent() {
           <Route path="/products" element={<Products />} />
           <Route path="/services" element={<Services />} />
           <Route path="/team" element={<Team />} />
+          <Route path="/dns-checker" element={<DNSChecker />} />
         </Routes>
       </AnimatePresence>
       <Footer />

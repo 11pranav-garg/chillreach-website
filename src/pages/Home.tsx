@@ -2,8 +2,15 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Shield, TrendingUp, CheckCircle, ArrowRight } from 'lucide-react';
 import DeliverabilitySection from '../components/DeliverabilitySection';
+import ProcessRoadmap from '../components/ProcessRoadmap';
 
-const FeatureCard = ({ icon: Icon, title, description }) => (
+interface FeatureCardProps {
+  icon: React.ElementType;
+  title: string;
+  description: string;
+}
+
+const FeatureCard: React.FC<FeatureCardProps> = ({ icon: Icon, title, description }) => (
   <motion.div 
     whileHover={{ scale: 1.05 }}
     className="feature-card p-8"
@@ -87,6 +94,9 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* Process Roadmap */}
+      <ProcessRoadmap />
 
       {/* Deliverability Section */}
       <DeliverabilitySection />

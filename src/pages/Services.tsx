@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Settings, InboxIcon, Check, ArrowRight } from 'lucide-react';
+import { Settings, InboxIcon, Check, ArrowRight, Users } from 'lucide-react';
 import { AnimatedCounter } from '../components/AnimatedCounter';
 import TierSelect from '../components/TierSelect';
 
@@ -16,7 +16,7 @@ const monitoringTiers = {
   },
   advanced: {
     title: "Advanced Monitoring",
-    price: 10,
+    price: 3.5,
     features: [
       "Weekly blacklist checks",
       "Advanced DNS reporting",
@@ -26,7 +26,7 @@ const monitoringTiers = {
   },
   premium: {
     title: "Premium Monitoring",
-    price: 15,
+    price: 3,
     features: [
       "Daily blacklist checks",
       "Comprehensive reporting",
@@ -137,7 +137,7 @@ const Services = () => {
 
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             <ServiceCard 
               title={
                 <div className="flex flex-col space-y-4">
@@ -162,6 +162,21 @@ const Services = () => {
                 "CRM integration",
                 "Custom workflow setup",
                 "Dedicated account manager"
+              ]}
+              isInitialLoad={isInitialLoad}
+            />
+
+            <ServiceCard 
+              title="Lead Generation"
+              price="Starts from $500"
+              icon={Users}
+              features={[
+                "Targeted prospect research",
+                "Custom outreach campaigns",
+                "Email sequence optimization",
+                "Lead qualification",
+                "Performance tracking",
+                "Weekly reporting"
               ]}
               isInitialLoad={isInitialLoad}
             />
