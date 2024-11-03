@@ -32,14 +32,14 @@ const Team = () => {
   const team = [
     {
       name: 'Sai Vamsi',
-      role: 'Founder & CEO',
+      role: 'Founder & Deliveribility Expert',
       image:
         'https://media.licdn.com/dms/image/v2/D5603AQEL0bedcwUldA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1726682447157?e=1735776000&v=beta&t=7izmqDfErv0TY_zwFdTgS_cRD2V0N1GJIoEF8W6ZeHA',
       linkedin: 'https://www.linkedin.com/in/sai-vamsi-coldemail/',
     },
     {
       name: 'Pranav Garg',
-      role: 'Co-Founder and Deliveribility Expert',
+      role: 'Co-Founder and Automation Expert',
       image:
         'https://media.licdn.com/dms/image/v2/D5603AQFrqp5OMmqcCw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1684153939668?e=1735776000&v=beta&t=51HY9_dqjBKr6qreEk3Y-LmQOZTBZcmPrLtWzghVhLo',
       linkedin: 'https://www.linkedin.com/in/11pranav-garg/',
@@ -84,7 +84,7 @@ const Team = () => {
             className="text-center mt-16"
           >
             <a
-              href="https://calendly.com/chillreach"
+              href="https://cal.com/malyakula-saivamsi-gepsvn/general-query-meet"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-orange-500 hover:bg-orange-600 px-8 py-3 rounded-lg text-lg font-semibold transition-colors duration-300"

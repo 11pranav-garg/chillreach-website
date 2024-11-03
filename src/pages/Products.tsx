@@ -4,7 +4,7 @@ import { Mail, Shield, Check, ArrowRight } from 'lucide-react';
 import { AnimatedCounter } from '../components/AnimatedCounter';
 
 const ProductCard = ({ title, price, features, icon: Icon }) => (
-  <motion.div 
+  <motion.div
     initial={{ opacity: 0, y: 20 }}
     whileInView={{ opacity: 1, y: 0 }}
     whileHover={{ y: -5 }}
@@ -27,14 +27,14 @@ const ProductCard = ({ title, price, features, icon: Icon }) => (
         ))}
       </ul>
       <div className="mt-auto">
-        <a 
-          href="https://calendly.com/chillreach" 
-          target="_blank" 
+        <a
+          href="https://cal.com/malyakula-saivamsi-gepsvn/15min"
+          target="_blank"
           rel="noopener noreferrer"
           className="w-full text-center py-3 rounded-lg transition-all duration-300 flex items-center justify-center group
             border border-orange-500/50 hover:border-orange-500 hover:bg-orange-500/10"
         >
-          Get Started 
+          Get Started
           <ArrowRight className="ml-2 w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300" />
         </a>
       </div>
@@ -47,7 +47,7 @@ const Products = () => {
     <div className="pt-16">
       {/* Products Hero */}
       <section className="min-h-[60vh] flex items-center justify-center px-4 py-20">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -66,30 +66,29 @@ const Products = () => {
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-8">
-            <ProductCard 
+            <ProductCard
               title="Google Workspace"
-              price={4.50}
+              price={4.5}
               icon={Mail}
               features={[
-                "Direct Google inbox access",
-                "Maximum deliverability",
-                "No reseller markup",
-                "Full account control",
-                "24/7 priority support",
-                "Setup assistance included"
+                'Direct Google inbox access',
+                'Maximum deliverability',
+                'No reseller markup',
+                'Full account control',
+                // '24/7 priority support',
+                'Setup assistance included',
               ]}
             />
-            <ProductCard 
+            <ProductCard
               title="Custom Mailbox"
-              price={4.00}
+              price={4.0}
               icon={Shield}
               features={[
-                "Custom domain required",
-                "Proven delivery rates",
-                "Domain management",
-                "Technical support included",
-                "Spam protection",
-                "Regular backups"
+                'Custom domain required',
+                'Proven delivery rates',
+                'Domain management',
+                'Technical support included',
+                'Spam protection',
               ]}
             />
           </div>
@@ -99,18 +98,19 @@ const Products = () => {
       {/* CTA Section */}
       <section className="py-20 px-4 bg-black/40">
         <div className="max-w-4xl mx-auto text-center">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             className="feature-card p-12"
           >
             <h2 className="text-3xl font-bold mb-6">Ready to Get Started?</h2>
             <p className="text-xl text-gray-300 mb-8">
-              Schedule a call with our team to find the perfect solution for your needs
+              Schedule a call with our team to find the perfect solution for
+              your needs
             </p>
-            <a 
-              href="https://calendly.com/chillreach" 
-              target="_blank" 
+            <a
+              href="https://cal.com/malyakula-saivamsi-gepsvn/15min"
+              target="_blank"
               rel="noopener noreferrer"
               className="btn-primary inline-flex items-center"
             >

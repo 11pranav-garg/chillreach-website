@@ -11,9 +11,9 @@ const TierSelect: React.FC<TierSelectProps> = ({ value, onChange }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const tiers = {
-    basic: 'Basic Tier',
-    advanced: 'Advanced Tier',
-    premium: 'Premium Tier',
+    basic: 'Basic Tier (Upto 200 inboxes)',
+    advanced: 'Advanced Tier (Upto 500 inboxes)',
+    premium: 'Premium Tier (Above 500 inboxes)',
   };
 
   return (

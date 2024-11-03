@@ -6,46 +6,46 @@ import TierSelect from '../components/TierSelect';
 
 const monitoringTiers = {
   basic: {
-    title: "Basic Monitoring",
+    title: 'Basic Monitoring',
     price: 5,
     features: [
-      "Monthly blacklist checks",
-      "Basic DNS reporting",
-      "Email support"
-    ]
+      'Monthly blacklist checks',
+      'Basic DNS reporting',
+      'Email support',
+    ],
   },
   advanced: {
-    title: "Advanced Monitoring",
+    title: 'Advanced Monitoring',
     price: 3.5,
     features: [
-      "Weekly blacklist checks",
-      "Advanced DNS reporting",
-      "Priority support",
-      "Performance analytics"
-    ]
+      'Bi-monthly blacklist checks',
+      'Advanced DNS reporting',
+      'Priority support',
+      // 'Performance analytics',
+    ],
   },
   premium: {
-    title: "Premium Monitoring",
+    title: 'Premium Monitoring',
     price: 3,
     features: [
-      "Daily blacklist checks",
-      "Comprehensive reporting",
-      "24/7 priority support",
-      "Real-time alerts",
-      "Custom dashboard"
-    ]
-  }
+      'Weekly blacklist checks',
+      'Comprehensive reporting',
+      // '24/7 priority support',
+      'Priority support',
+      // 'Custom dashboard',
+    ],
+  },
 };
 
 const ServiceCard = ({ title, price, features, icon: Icon, isInitialLoad }) => (
-  <motion.div 
+  <motion.div
     initial={{ opacity: 0, y: 20 }}
     whileInView={{ opacity: 1, y: 0 }}
     whileHover={{ y: -5 }}
     transition={{ duration: 0.3 }}
     className="feature-card relative h-full overflow-hidden"
   >
-    <motion.div 
+    <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
@@ -54,7 +54,7 @@ const ServiceCard = ({ title, price, features, icon: Icon, isInitialLoad }) => (
       <motion.div
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
-        transition={{ type: "spring", stiffness: 200, damping: 15 }}
+        transition={{ type: 'spring', stiffness: 200, damping: 15 }}
       >
         <Icon className="w-12 h-12 text-orange-500 mb-4" />
       </motion.div>
@@ -68,8 +68,12 @@ const ServiceCard = ({ title, price, features, icon: Icon, isInitialLoad }) => (
         <span className="text-sm text-gray-400">/month</span>
       </div>
       <AnimatePresence mode="wait">
-        <motion.ul 
-          key={typeof title === 'string' ? title : title.props?.children[0]?.props?.children}
+        <motion.ul
+          key={
+            typeof title === 'string'
+              ? title
+              : title.props?.children[0]?.props?.children
+          }
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -77,7 +81,7 @@ const ServiceCard = ({ title, price, features, icon: Icon, isInitialLoad }) => (
           className="space-y-3 mb-8 flex-grow"
         >
           {features.map((feature, index) => (
-            <motion.li 
+            <motion.li
               key={index}
               initial={{ x: -20, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
@@ -90,9 +94,9 @@ const ServiceCard = ({ title, price, features, icon: Icon, isInitialLoad }) => (
           ))}
         </motion.ul>
       </AnimatePresence>
-      <motion.a 
-        href="https://calendly.com/chillreach" 
-        target="_blank" 
+      <motion.a
+        href="https://cal.com/malyakula-saivamsi-gepsvn/inbox-monitoring"
+        target="_blank"
         rel="noopener noreferrer"
         whileHover={{ scale: 1.02 }}
         whileTap={{ scale: 0.98 }}
@@ -100,7 +104,7 @@ const ServiceCard = ({ title, price, features, icon: Icon, isInitialLoad }) => (
           bg-gradient-to-r from-orange-500 to-orange-600 text-white
           hover:from-orange-600 hover:to-orange-700"
       >
-        Learn More 
+        Learn More
         <ArrowRight className="ml-2 w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300" />
       </motion.a>
     </motion.div>
@@ -120,7 +124,7 @@ const Services = () => {
   return (
     <div className="pt-16">
       <section className="min-h-[60vh] flex items-center justify-center px-4 py-20">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -138,11 +142,14 @@ const Services = () => {
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8">
-            <ServiceCard 
+            <ServiceCard
               title={
                 <div className="flex flex-col space-y-4">
                   <span>Monitoring Service</span>
-                  <TierSelect value={selectedTier} onChange={handleTierChange} />
+                  <TierSelect
+                    value={selectedTier}
+                    onChange={handleTierChange}
+                  />
                 </div>
               }
               price={currentTier.price}
@@ -151,32 +158,32 @@ const Services = () => {
               isInitialLoad={isInitialLoad}
             />
 
-            <ServiceCard 
+            <ServiceCard
               title="Inbox Management"
               price="Starts from $500"
               icon={InboxIcon}
               features={[
-                "Master inbox handling",
-                "Reply management",
-                "Response categorization",
-                "CRM integration",
-                "Custom workflow setup",
-                "Dedicated account manager"
+                'Master inbox handling',
+                'Reply management',
+                'Response categorization',
+                'CRM integration',
+                'Custom workflow setup',
+                'Dedicated account manager',
               ]}
               isInitialLoad={isInitialLoad}
             />
 
-            <ServiceCard 
+            <ServiceCard
               title="Lead Generation"
-              price="Starts from $500"
+              price="Starts from $700"
               icon={Users}
               features={[
-                "Targeted prospect research",
-                "Custom outreach campaigns",
-                "Email sequence optimization",
-                "Lead qualification",
-                "Performance tracking",
-                "Weekly reporting"
+                'Targeted prospect research',
+                'Custom outreach campaigns',
+                'Email sequence optimization',
+                'Lead qualification',
+                'Performance tracking',
+                'Weekly reporting',
               ]}
               isInitialLoad={isInitialLoad}
             />
@@ -186,18 +193,19 @@ const Services = () => {
 
       <section className="py-20 px-4 bg-black/40">
         <div className="max-w-4xl mx-auto text-center">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             className="feature-card p-12"
           >
             <h2 className="text-3xl font-bold mb-6">Need Custom Solutions?</h2>
             <p className="text-xl text-gray-300 mb-8">
-              Let's discuss how we can tailor our services to your specific needs
+              Let's discuss how we can tailor our services to your specific
+              needs
             </p>
-            <motion.a 
-              href="https://calendly.com/chillreach" 
-              target="_blank" 
+            <motion.a
+              href="https://cal.com/malyakula-saivamsi-gepsvn/general-query-meet"
+              target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
