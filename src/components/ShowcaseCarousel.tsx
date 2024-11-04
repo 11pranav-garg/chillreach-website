@@ -17,12 +17,12 @@ const results = [
     id: 3,
     image: '/public/results/result3.png',
     alt: 'Results3'
-  }
+  },
   {
     id: 4,
     image: '/public/results/result4.png',
     alt: 'Results4'
-  }
+  },
 {
     id: 5,
     image: '/public/results/result5.png',
