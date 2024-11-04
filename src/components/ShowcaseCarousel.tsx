@@ -43,7 +43,7 @@ const ShowcaseCarousel = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       paginate(1);
-    }, 5000);
+    }, 10000);
 
     return () => clearInterval(timer);
   }, [paginate]);
