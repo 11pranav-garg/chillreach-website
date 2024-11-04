@@ -9,6 +9,7 @@ import {
 } from 'lucide-react';
 import DeliverabilitySection from '../components/DeliverabilitySection';
 import ProcessRoadmap from '../components/ProcessRoadmap';
+import ShowcaseCarousel from '../components/ShowcaseCarousel';
 
 interface FeatureCardProps {
   icon: React.ElementType;
@@ -101,6 +102,27 @@ const Home = () => {
               description="Consistently high delivery rates and improved campaign performance."
             />
           </div>
+        </div>
+      </section>
+
+      {/* Showcase Section */}
+      <section className="py-20 px-4 bg-black/40">
+        <div className="max-w-7xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Our <span className="text-gradient">Results</span>
+            </h2>
+            <p className="text-xl text-gray-300">
+              Real campaign results from our satisfied clients
+            </p>
+          </motion.div>
+
+          <ShowcaseCarousel />
         </div>
       </section>
 

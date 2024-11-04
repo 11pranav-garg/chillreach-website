@@ -32,6 +32,11 @@ function AppContent() {
     return () => window.removeEventListener('mousemove', updateCursorPosition);
   }, []);
 
+  // Scroll to top on route change
+  React.useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [location.pathname]);
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-black via-black to-orange-900">
       <CustomCursor position={cursorPosition} />
