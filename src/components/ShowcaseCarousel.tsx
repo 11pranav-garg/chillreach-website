@@ -5,13 +5,28 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 const results = [
   {
     id: 1,
-    image: 'https://raw.githubusercontent.com/stackblitz/result1.png',
-    alt: 'July Campaign Results'
+    image: '/public/results/result1.png',
+    alt: 'Results1'
   },
   {
     id: 2,
-    image: 'https://raw.githubusercontent.com/stackblitz/result2.png',
-    alt: 'June Campaign Results'
+    image: '/public/results/result2.png',
+    alt: 'Results2'
+  },
+  {
+    id: 3,
+    image: '/public/results/result3.png',
+    alt: 'Results3'
+  }
+  {
+    id: 4,
+    image: '/public/results/result4.png',
+    alt: 'Results4'
+  }
+{
+    id: 5,
+    image: '/public/results/result5.png',
+    alt: 'Results5'
   }
 ];
 
