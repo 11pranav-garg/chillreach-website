@@ -2,6 +2,15 @@ import React from 'react';
 import { Mail, Phone, MapPin, Linkedin, Send } from 'lucide-react';
 
 const Footer = () => {
+  const trackOutboundLink = (label: string) => {
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'click', {
+        'event_category': 'outbound',
+        'event_label': label,
+      });
+    }
+  };
+
   return (
     <footer className="bg-black/60 border-t border-orange-500/20">
       <div className="max-w-7xl mx-auto px-4 py-12">
@@ -21,7 +30,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <a
-                  href="/"
+                  href="/?utm_source=footer&utm_medium=quicklinks&utm_campaign=internal"
                   className="text-gray-400 hover:text-orange-500 transition-colors duration-300"
                 >
                   Home
@@ -29,7 +38,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="/products"
+                  href="/products?utm_source=footer&utm_medium=quicklinks&utm_campaign=internal"
                   className="text-gray-400 hover:text-orange-500 transition-colors duration-300"
                 >
                   Products
@@ -37,7 +46,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="/services"
+                  href="/services?utm_source=footer&utm_medium=quicklinks&utm_campaign=internal"
                   className="text-gray-400 hover:text-orange-500 transition-colors duration-300"
                 >
                   Services
@@ -45,7 +54,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="/dns-checker"
+                  href="/dns-checker?utm_source=footer&utm_medium=quicklinks&utm_campaign=internal"
                   className="text-gray-400 hover:text-orange-500 transition-colors duration-300"
                 >
                   DNS Checker
@@ -53,7 +62,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="/team"
+                  href="/team?utm_source=footer&utm_medium=quicklinks&utm_campaign=internal"
                   className="text-gray-400 hover:text-orange-500 transition-colors duration-300"
                 >
                   Team
@@ -68,6 +77,7 @@ const Footer = () => {
               <li>
                 <a
                   href="mailto:sai@chillreach.org"
+                  onClick={() => trackOutboundLink('email')}
                   className="flex items-center text-gray-400 hover:text-orange-500 transition-colors duration-300"
                 >
                   <Mail className="w-4 h-4 mr-2" />
@@ -76,9 +86,10 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="https://wa.me/919392274091"
+                  href="https://wa.me/919392274091?utm_source=website&utm_medium=footer&utm_campaign=contact"
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => trackOutboundLink('whatsapp_1')}
                   className="flex items-center text-gray-400 hover:text-orange-500 transition-colors duration-300"
                 >
                   <Phone className="w-4 h-4 mr-2" />
@@ -87,9 +98,10 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="https://wa.me/919267951769"
+                  href="https://wa.me/919267951769?utm_source=website&utm_medium=footer&utm_campaign=contact"
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => trackOutboundLink('whatsapp_2')}
                   className="flex items-center text-gray-400 hover:text-orange-500 transition-colors duration-300"
                 >
                   <Phone className="w-4 h-4 mr-2" />
@@ -101,6 +113,7 @@ const Footer = () => {
                   href="https://maps.google.com/?q=Vishakhapatnam,India"
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => trackOutboundLink('location')}
                   className="flex items-center text-gray-400 hover:text-orange-500 transition-colors duration-300"
                 >
                   <MapPin className="w-4 h-4 mr-2" />
@@ -109,9 +122,10 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="https://www.linkedin.com/in/sai-vamsi-coldemail/"
+                  href="https://www.linkedin.com/in/sai-vamsi-coldemail/?utm_source=website&utm_medium=footer&utm_campaign=social"
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => trackOutboundLink('linkedin')}
                   className="flex items-center text-gray-400 hover:text-orange-500 transition-colors duration-300"
                 >
                   <Linkedin className="w-4 h-4 mr-2" />
@@ -124,9 +138,10 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Schedule</h4>
             <a
-              href="https://cal.com/malyakula-saivamsi-gepsvn/general-query-meet"
+              href="https://cal.com/malyakula-saivamsi-gepsvn/general-query-meet?utm_source=website&utm_medium=footer&utm_campaign=booking"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackOutboundLink('calendar')}
               className="bg-orange-500 hover:bg-orange-600 px-6 py-2 rounded-lg inline-block transition-colors duration-300"
             >
               Book a Call
