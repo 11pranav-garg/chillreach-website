@@ -39,7 +39,7 @@ const Team = () => {
     },
     {
       name: 'Pranav Garg',
-      role: 'Co-Founder and Automation Expert',
+      role: 'Co-Founder & Automation Expert',
       image:
         'https://media.licdn.com/dms/image/v2/D5603AQFrqp5OMmqcCw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1684153939668?e=1735776000&v=beta&t=51HY9_dqjBKr6qreEk3Y-LmQOZTBZcmPrLtWzghVhLo',
       linkedin: 'https://www.linkedin.com/in/11pranav-garg/',
