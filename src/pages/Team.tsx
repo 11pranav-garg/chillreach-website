@@ -32,7 +32,7 @@ const Team = () => {
   const team = [
     {
       name: 'Sai Vamsi',
-      role: 'Founder & Deliveribility Expert',
+      role: 'Co-Founder & Deliveribility Expert',
       image:
         'https://media.licdn.com/dms/image/v2/D5603AQEL0bedcwUldA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1726682447157?e=1735776000&v=beta&t=7izmqDfErv0TY_zwFdTgS_cRD2V0N1GJIoEF8W6ZeHA',
       linkedin: 'https://www.linkedin.com/in/sai-vamsi-coldemail/',
