@@ -57,7 +57,7 @@ const Footer = () => {
                   href="/dns-checker?utm_source=footer&utm_medium=quicklinks&utm_campaign=internal"
                   className="text-gray-400 hover:text-orange-500 transition-colors duration-300"
                 >
-                  DNS Checker
+                  Free DNS Checker
                 </a>
               </li>
               <li>
