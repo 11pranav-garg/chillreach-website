@@ -119,7 +119,7 @@ const Navbar = () => {
                   location.pathname === '/dns-checker' ? 'text-orange-500' : 'text-gray-300'
                 }`}
               >
-                DNS Checker
+                Free DNS Checker
               </button>
               <button
                 onClick={() => handleNavigation('/team')}
