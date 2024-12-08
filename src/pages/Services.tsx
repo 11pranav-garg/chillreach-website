@@ -160,7 +160,7 @@ const Services = () => {
 
             <ServiceCard
               title="Inbox Management"
-              price="Starts from $500"
+              price="Starts from $750"
               icon={InboxIcon}
               features={[
                 'Master inbox handling',
